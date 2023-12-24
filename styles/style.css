@@ -4,29 +4,58 @@ body{
     margin: 0px;
     font-family: "Montserrat", sans-serif;
     background-color: #fefefe;
-    max-width: 1600px;
     min-width: 1500px;
 }
 .main{
-    padding: 0;
-    margin: 0px 435px 0px 430px;
-    width: 43%;
+    padding: auto;
+    margin: auto;
+    width: 45%;
+    max-width: 650px;
     float: none;
+    align-self: center;
 }
-.right-main{
-    background-color: #efefef;
-    height: 920px;
-    width: 15%;
-    float: right;
-    margin: 0px 185px 0px 0px;
+.menu{
+    min-width: 70%;
+}
+.fix{
+    
+}
+.left{
+    float: left;
+    width: 26%;
 }
 .left-main{
+    align-self: flex-end;
     background-color: white;
     height: 900px;
-    width: 15%;
-    float: left;
-    margin: 0px 0px 0px 185px;
+    width: 60%;
+    float: right;
+    width: 228px;
+    position: relative;
+    left: 18px;
 }
+.left-blank{
+    width: 40%;
+    float: left;
+}
+.right{
+    width: 26%;
+    float: right;
+}
+.right-main{
+    background-color: white;
+    height: 900px;
+    width: 60%;
+    float: left;
+    max-width: 228px;
+    position: relative;
+    right: 18px;
+}
+.right-blank{
+    width: 40%;
+    float: right;
+}
+
 .header, .vertical_align_fix{
     background-color: #dbdbdb;
 }
@@ -208,7 +237,6 @@ h2, h3{
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     background: #eee
-    
 }
 .outer{
     border-width: 1px;
