@@ -4,20 +4,15 @@ body{
     margin: 0px;
     font-family: "Montserrat", sans-serif;
     background-color: #fefefe;
+    max-width: none;
     min-width: 1500px;
 }
 .main{
     padding: auto;
     margin: auto;
-    width: 45%;
+    width: 44%;
     float: none;
     align-self: center;
-}
-.menu{
-    min-width: 70%;
-}
-.fix{
-    
 }
 .left{
     float: left;
@@ -42,13 +37,13 @@ body{
     float: right;
 }
 .right-main{
-    background-color: white;
-    height: 900px;
     width: 60%;
     float: left;
     max-width: 228px;
     position: relative;
     right: 18px;
+    background-color: #f1f1f1;
+    padding-top: 11px;
 }
 .right-blank{
     width: 40%;
@@ -68,17 +63,20 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0px;
-    margin-top: -22px;
+    margin-bottom: -30px;
+    padding-top: 10px;
+    margin-top: 0px;
 }
 .vertical_align_fix{
     margin: 0;
     height: 49px;
     width: 100%;
     float: left;
+    text-align: center;
 }
 .header a{
-    margin: 0px 0px 0px 263px;
+    margin: 0px 725px 0px 0px;
+    padding: 0px;
 }
 .box{
     background-color: #eee;
@@ -136,8 +134,10 @@ input{
 .active, .menu-bar ul li:hover{
     background: hsl(0, 0%, 50%);
 }
+
 .sub-menu-1{
     display: none;
+    z-index: 1;
 }
 .menu-bar ul li:hover .sub-menu-1{
     display: block;
@@ -162,16 +162,6 @@ input{
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
     background: hsl(214, 68%, 60%);
 }
-/*.sub-menu-2{
-    display: none;
-}
-.hover-me:hover .sub-menu-2{
-    position: absolute;
-    display: block;
-    margin-top: -55.6px;
-    margin-left: 200px;
-    background:hsl(0, 0%, 65%);
-}*/
 .menu-2{
     background-color: #dbdbdb;
     text-align: left;
@@ -196,10 +186,10 @@ input{
     display: block;
     text-align: left;
 }
-.menu-2 ul li:hover{
+.active_2, .menu-2 ul li:hover{
     background: hsl(0, 0%, 60%);
 }
-.video, .gympsy, .toplist{
+.video, .gympsy{
     background-color: #f1f1f1;
     width: 90%;
     border-style: solid;
@@ -271,7 +261,7 @@ h2, h3{
     display: inline-block;
     border: 1px solid hsl(0, 0%, 60%);
     margin: 5px;
-    width: 199px;
+    width: 31%;
 }
 .gallery:hover{
     border: 1px solid hsl(0, 0%, 20%);
@@ -289,7 +279,7 @@ h2, h3{
     border-width: 1px;
     border-radius: 7px;
     padding: 0px 0px 2px 0px;
-    margin: 10px auto 10px auto;
+    margin: 0px auto 10px auto;
     text-align: center;
     text-decoration: none;
   }
@@ -355,3 +345,8 @@ h2, h3{
     margin: auto;
     padding: 0 3px;
   }
+
+  .highlight {
+    background-color: yellow;
+    font-weight: bold;
+ }

@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymnázium Púchov</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,19 +18,6 @@
         <h1 class="vertical_align_fix" id="logotext">
             <a href="index.html" id="logo" title="Gymnázium Púchov">Gymnázium Púchov</a>
         </h1>
-        <!--<div id="search"></div>
-        <form id="search" method="get" action="http://www.gympb.sk/vyhladavanie.html?page_id=149">
-            <div id="search_form_content">
-                <div class="form_fields">
-                    <div class="search_left">
-                    <input type="text" name="hladaj" value="">
-                    </div>
-                    <div class="search_right">
-                    <input type="submit" name="search_button" value="">
-                    </div>
-                </div>
-            </div>
-        </form>-->
     </div>
 
     <div class="menu">
@@ -89,208 +75,206 @@
                 <li><a href="kontakty.html" title="">Kontakty</a></li>
             </ul>
             <div class="box">
-                <form id="searchForm" action="hladat.html" method="post" name="searchForm">
-                    <input type="text" name="searchword" id="search_searchword" class="inputbox" placeholder="Hľadať"/>
-                    <button name="Search" onclick="this.form.submit()" class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form>
+                    <input type="text" id="searchInput" class="inputbox" placeholder="Hľadať"/>
+                    <button type="button" onclick="highlightText()" class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
         </div>
     </div>
 
-        <div class="left">
-            <div class="left-blank"></div>
-            <div class="left-main">
-                <div class="menu-2">
-                    <ul>
-                        <li><a href="pre_ziakov.html" title="">Pre žiakov</a> </li>
-                        <li><a href="" title="">Pre rodičov</a> </li>
-                        <li><a href="" title="">Podujatia, akcie</a> </li>
-                        <li><a href="" title="">Školský časopis - Gympsy</a> </li>
-                        <li><a href="" title="">Virtuálna prehliadka</a> </li>
-                    </ul>
-                </div>
-                <div class="plagat">
-                    <a href="zelena_a_modra_skola.html" title="Zelená škola"><img src="images/zelena-skola.png" alt="Zelená škola" width="220" height="440"></a>
-                    <a href="" title="DofE"><img src="images/dofe.jpg" alt="DofE" width="220" height="70"></a>
-                    <a href="" title="Náboj"><img src="images/naboj2.0.png" alt="Náboj" width="220" height="74"></a>
-                </div>
+    <div class="left">
+        <div class="left-blank"></div>
+        <div class="left-main">
+            <div class="menu-2">
+                <ul>
+                    <li><a href="pre_ziakov.html" title="">Pre žiakov</a> </li>
+                    <li><a href="pre_rodicov.html" title="">Pre rodičov</a> </li>
+                    <li><a href="podujatia_akcie.html" title="">Podujatia, akcie</a> </li>
+                    <li><a href="gympsy.html" title="">Školský časopis - Gympsy</a> </li>
+                    <li><a href="virtualna_prehliadka.html" title="">Virtuálna prehliadka</a> </li>
+                </ul>
+            </div>
+            <div class="plagat">
+                <a href="zelena_a_modra_skola.html" title="Zelená škola"><img src="images/zelena-skola.png" alt="Zelená škola" width="220" height="440"></a>
+                <a href="dofe.html" title="DofE"><img src="images/dofe.jpg" alt="DofE" width="220" height="70"></a>
+                <a href="naboj.html" title="Náboj"><img src="images/naboj2.0.png" alt="Náboj" width="220" height="74"></a>
             </div>
         </div>
-        
-    <div class="fix">
-        <div class="right">
-            <div class="right-blank"></div>
-            <div class="right-main">
-                <div class="event-container">
-                    <h4>Informácie:</h4>
-                    <div class="event">
-                        <div class="event-left">
-                        <div class="event-date">
-                            <div class="date">1</div>
-                            <div class="month">Dec</div>
-                        </div>
-                        </div>
-                
-                        <div class="event-right">
-                        <h3 class="event-title">75. výročie</h3>
-                
-                        <div class="event-description">
-                            Pozývame Vás na vyvrcholenie osláv 75. výročia od založenia
-                        </div>
-                        </div>
+    </div>
+    
+    <div class="right">
+        <div class="right-blank"></div>
+        <div class="right-main">
+            <div class="event-container">
+                <h4>Informácie:</h4>
+                <div class="event">
+                    <div class="event-left">
+                    <div class="event-date">
+                        <div class="date">1</div>
+                        <div class="month">Dec</div>
                     </div>
-                
-                    <div class="event">
-                        <div class="event-left">
-                        <div class="event-date">
-                            <div class="date">8</div>
-                            <div class="month">Dec</div>
-                        </div>
-                        </div>
-                
-                        <div class="event-right">
-                        <h3 class="event-title">Zimný candrbál</h3>
-                
-                        <div class="event-description">
-                            Vstupenky zakúpite v triede 3.B
-                        </div>
-                        </div>
                     </div>
-                    <div>
-                        <a href="https://www.facebook.com/Gymn%C3%A1zium-P%C3%BAchov-1133590770011503/" target="_blank">
-                            <img src="images/logo-fb.png" alt="Gymnázium Púchov Facebook" title="Facebook" width="44" height="40">
-                        </a>
-                        <a href="https://www.instagram.com/gymnazium_puchov/" target="_blank">
-                            <img src="images/logo-ig.png" alt="Gymnázium Púchov Instagram" title="Instagram" width="48" height="40">
-                        </a>
-                        <a href="https://www.tiktok.com/@gymnazium.puchov" target="_blank">
-                            <img src="images/logo-tt.webp" alt="Gymnázium Púchov Tiktok" title="Tiktok" width="37" height="35">
-                        </a>
+            
+                    <div class="event-right">
+                    <h3 class="event-title">75. výročie</h3>
+            
+                    <div class="event-description">
+                        Pozývame Vás na vyvrcholenie osláv 75. výročia od založenia
+                    </div>
                     </div>
                 </div>
-                <div class="video">
-                    <h4>Promo video:</h4>
-                    <iframe width="190" height="109" src="https://www.youtube.com/embed/LM1Faa1WcIQ?si=W0nmKA4TgpNAKRMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="190" height="109" src="https://www.youtube.com/embed/LXSyLRljhdk?si=VwqcwrAsTkkIHyWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <iframe width="190" height="109" src="https://www.youtube.com/embed/nDisebxXUN4?si=_QbPEV1womcyxbu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+                <div class="event">
+                    <div class="event-left">
+                    <div class="event-date">
+                        <div class="date">8</div>
+                        <div class="month">Dec</div>
+                    </div>
+                    </div>
+            
+                    <div class="event-right">
+                    <h3 class="event-title">Zimný candrbál</h3>
+            
+                    <div class="event-description">
+                        Vstupenky zakúpite v triede 3.B
+                    </div>
+                    </div>
                 </div>
-                <div class="gympsy">
-                    <h4>Šk. časopis - Gympsy:</h4>
-                    <span style="font-size: 11pt;"><a href="" title="Školský časopis - Gympsy">
-                        <strong>Gympsy 10-2023/24<br></strong></span>
-                        <img src="images/gympsy.png" alt="Školský časopis - Gympsy" width="190" height="130">
+                <div>
+                    <a href="https://www.facebook.com/Gymn%C3%A1zium-P%C3%BAchov-1133590770011503/" target="_blank">
+                        <img src="images/logo-fb.png" alt="Gymnázium Púchov Facebook" title="Facebook" width="44" height="40">
                     </a>
-                    <span style="font-size: 10pt;"><a href="" target="_self">Ostatné čísla</a></span>
+                    <a href="https://www.instagram.com/gymnazium_puchov/" target="_blank">
+                        <img src="images/logo-ig.png" alt="Gymnázium Púchov Instagram" title="Instagram" width="48" height="40">
+                    </a>
+                    <a href="https://www.tiktok.com/@gymnazium.puchov" target="_blank">
+                        <img src="images/logo-tt.webp" alt="Gymnázium Púchov Tiktok" title="Tiktok" width="37" height="35">
+                    </a>
                 </div>
             </div>
+            <div class="video">
+                <h4>Promo video:</h4>
+                <iframe width="190" height="109" src="https://www.youtube.com/embed/LM1Faa1WcIQ?si=W0nmKA4TgpNAKRMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="190" height="109" src="https://www.youtube.com/embed/LXSyLRljhdk?si=VwqcwrAsTkkIHyWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="190" height="109" src="https://www.youtube.com/embed/nDisebxXUN4?si=_QbPEV1womcyxbu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="gympsy">
+                <h4>Šk. časopis - Gympsy:</h4>
+                <span style="font-size: 11pt;"><a href="https://www.puchovskenoviny.sk/wp-content/uploads/2023/10/PN_2023_20.pdf" title="Školský časopis - Gympsy">
+                    <strong>Gympsy 10-2023<br></strong></span>
+                    <img src="images/gympsy.png" alt="Školský časopis - Gympsy" width="190" height="130">
+                </a>
+                <span style="font-size: 10pt;"><a href="gympsy.html" target="_self">Ostatné čísla</a></span>
+            </div>
         </div>
+    </div>
         
         <main>
             <div class="main">
-                <div class="outer">
-                    <div class="inner"><h2>Gymnázium Púchov</h2></div>
-                </div>
-                    <div class="content">
-                        <div class="outer">
-                            <div class="inner">
-                                <h3>PRIJÍMANIE pre školský rok 2024/2025</h3>
-                            </div>
-                            <p style="font-size: smaller;"><a href="docs/prijimacie_skusky/Gym_PU_prijimanie_ziakovpre_2425_a_2526.doc">Kritériá prijatia pre školský rok 2024/2025 pre 8-ročné štúdium a pre 4-ročné štúdium.</a></p>
-                            <p><font color="red"><strong>Deň otvorených dverí</strong></font>
-                            <br><br>
-                            pre 4- ročné štúdium 12.12.2023, 14,00- 17,00.
-                            <br><br>
-                            pre 8- ročné štúdium 7.2.2024, 14,00- 17,00.
-                            <br><br>
-                            Základné informácie:
-                            <br><br>
-                            Pre školský rok 2024/2025 prijímame:
-                            <br>
-                            <font color="blue">• jednu triedu <strong>8-ročného štúdia, 20 žiakov</strong> (pre žiakov, ktorí sú dnes piataci v ZŠ)
-                            <br>
-                            • dve triedy <strong>4-ročného štúdia, 60 žiakov</strong> (pre žiakov, ktorí sú dnes deviataci v ZŠ).
-                            <br>
-                            <strong>Prihlášky sa podávajú do 20.marca 2024 riaditeľovi gymnázia.</strong></font>
-                            <br><br>
-                            EDUID Gymnázia Púchov 100004429
-                            <br><br>
-                            Prihlášku podáva zákonný zástupca, potvrdzuje ju základná škola, prihlášku podpisiujú obaja rodičia
-                            <br><br>
-                            Tento termín je rovnaký pre osemročné aj štvorročné štúdium.
-                            <br>
-                            Potvrdenie o zdravotnom stave predkladajú len žiaci so zmenenou zdravotnou spôsobilosťou,
-                            <br>
-                            Prijímacie skúšky do <font color="blue"><strong>8-ročného štúdia a do 4-ročného štúdia</strong></font> sú zo SLOVENSKÉHO JAZYKA a MATEMATIKY
-                            <br><br>
-                            <strong> 1.kolo- 1.termín  2.mája 2024
-                            <br>
-                            1.kolo- 2.termín  6.mája 2024.</strong> 
-                            <br><br>
-                            2.kolo 18.6.2024 len pre 4-ročné štúdium.
-                            <br><br>
-                            Výsledky po 1.kole zverejnia všetky školy 17.5.2024, rodič potvrdzuje nástup na štúdium do 22.5.2024. 
-                            <br><br>
-                            <font color="red"><strong>Zápis žiakov do 4RG prijatých bez prijímacej skúšky</strong></font> (T9 90 a viac%) organizujeme 2.5.2024, 13,30- 16,30h., hlavný vchod, školská knižnica vo vstupe.
-                            <br><br>
-                            <font color="red"><strong>Zápis žiakov po prijímacích skúškach</strong></font>
-                            <br><br>
-                            pre 4RG organizujeme 17.5.2024 13,30 - 16,30 h., hlavný vchod, školská knižnica vo vstupe,
-                            <br><br>
-                            pre 8RG organizujeme 20.5.2024 13,30 - 16,30 h., hlavný vchod, školská knižnica vo vstupe.
-                            <br><br>
-                            Všetkým záujemcom pošleme písomnú pozvánku s pokynmi k prijímacím skúškam najneskôr 5 dní pred skúškou. Všetci žiaci musia absolvovať písomnú prijímaciu skúšku. Výnimkou sú žiaci prihlásení do 4RG a dosiahnu výsledok v testovaní T9 90 a viac % v oboch predmetoch. Títo žiaci budú prijatí bez písomnej prijímacej skúšky. Všetkým záujemcom o štúdium u nás držíme palce a tešíme sa na Vás!
-                            <br><br>
-                            Miroslav Kubičár</p>
-                        </div>
-
-                        <div class="outer">
-                            <div class="inner">
-                                <h3>Koyšove Ladce</h3>
-                            </div>
-                            <p>20.10.2023 /piatok/ sa</p>
-                            <p style="text-align: center;"><font color="blue"><strong>Mária Šalamúnová /sekunda/
-                            <br><br>
-                            zúčastnila celoštátnej súťaže v umeleckom prednese Koyšove Ladce.</strong></font>
-                            <br><br>
-                            V II. kategórii, vo veľkej konkurencii žiakov stredných škôl, konzervatórií a osemročných gymn. si "vyrecitovala" <font color="red"><strong>2. miesto.</strong></font>
-                            <br><br>
-                            Srdečne gratulujeme a povzbudzujeme všetkých k rozmanitým súťažiam a aktivitám.
-                            <br><br>
-                            V prílohe fotografia našej skvelej recitátorky s JUDr. Margarétou Koyšovou, manželkou básnika Pavla Koyša.
-                            <br><br>
-                            D. Mucsková
-                            </p>
-                            <img src="images/posts/Koysove_Ladce_Maria_Salamunova.jpeg" width="550" height="733">
-                        </div>
-
-                        <div class="outer">
-                            <div class="inner">
-                                <h3>Deň duševného zdravia</h3>
-                            </div>
-                            <p>Dňa 11.10. 2023 sa v podkroví uskutočnil
-                            <br><br>
-                            <strong>Deň duševného zdravia. Pozvané boli triedy Sexty, Tercia, 2.A.,</strong>
-                            <br><br>
-                            s ktorými sme počas dňa skupinovo pracovali. Zo začiatku sme sa zamerali na zdroje  v živote, ktoré by sme mohli prirovnať k barličkám, o ktoré sa v živote opierame. 
-                            <br><br>
-                            V druhej aktivite sme žiakov rozdelili do skupiniek. Každá skupinka dostala krátky príbeh o študentovi, ktorý prežíval náročnú životnú situáciu. Žiaci sa snažili vymyslieť, ako by pre daného študenta mohli byť nápomocní. Nešlo o to, aby prišli na správnu odpoveď, ale snažili sme sa v žiakoch prebudiť citlivosť, vnímavosť voči okoliu.
-                            <br><br>
-                            Po individuálnom vyhodnotení sme viedli diskusiu na dané témy. Žiaci boli oboznámení s linkou pomoci Ipečko a Káčko Trenčín.
-                            <br><br>
-                            M.Adamičková
-                            </p>
-                            <img src="images/posts/dusa1.jpg" width="300" height="400" style="width: 45%; height: 100%;
-                            float: left;">
-                            <img src="images/posts/dusa2.jpg" width="300" height="400" style="width: 45%; height: 100%;
-                            float: right;">
-                            <img src="images/posts/dusa3.jpg" width="300" height="400" style="width: 45%; height: 100%;
-                            float: left;">
-                            <img src="images/posts/dusa4.jpg" width="300" height="400" style="width: 45%; height: 100%;">
-                        </div>
-                        
+                <div class="content">
+                    <div class="outer">
+                        <div class="inner"><h2>Gymnázium Púchov</h2></div>
                     </div>
+                    <div class="outer">
+                        <div class="inner">
+                            <h3>PRIJÍMANIE pre školský rok 2024/2025</h3>
+                        </div>
+                        <p style="font-size: smaller;"><a href="docs/prijimacie_skusky/Gym_PU_prijimanie_ziakovpre_2425_a_2526.doc">Kritériá prijatia pre školský rok 2024/2025 pre 8-ročné štúdium a pre 4-ročné štúdium.</a></p>
+                        <p><font color="red"><strong>Deň otvorených dverí</strong></font>
+                        <br><br>
+                        pre 4- ročné štúdium 12.12.2023, 14,00- 17,00.
+                        <br><br>
+                        pre 8- ročné štúdium 7.2.2024, 14,00- 17,00.
+                        <br><br>
+                        Základné informácie:
+                        <br><br>
+                        Pre školský rok 2024/2025 prijímame:
+                        <br>
+                        <font color="blue">• jednu triedu <strong>8-ročného štúdia, 20 žiakov</strong> (pre žiakov, ktorí sú dnes piataci v ZŠ)
+                        <br>
+                        • dve triedy <strong>4-ročného štúdia, 60 žiakov</strong> (pre žiakov, ktorí sú dnes deviataci v ZŠ).
+                        <br>
+                        <strong>Prihlášky sa podávajú do 20.marca 2024 riaditeľovi gymnázia.</strong></font>
+                        <br><br>
+                        EDUID Gymnázia Púchov 100004429
+                        <br><br>
+                        Prihlášku podáva zákonný zástupca, potvrdzuje ju základná škola, prihlášku podpisiujú obaja rodičia
+                        <br><br>
+                        Tento termín je rovnaký pre osemročné aj štvorročné štúdium.
+                        <br>
+                        Potvrdenie o zdravotnom stave predkladajú len žiaci so zmenenou zdravotnou spôsobilosťou,
+                        <br>
+                        Prijímacie skúšky do <font color="blue"><strong>8-ročného štúdia a do 4-ročného štúdia</strong></font> sú zo SLOVENSKÉHO JAZYKA a MATEMATIKY
+                        <br><br>
+                        <strong> 1.kolo- 1.termín  2.mája 2024
+                        <br>
+                        1.kolo- 2.termín  6.mája 2024.</strong> 
+                        <br><br>
+                        2.kolo 18.6.2024 len pre 4-ročné štúdium.
+                        <br><br>
+                        Výsledky po 1.kole zverejnia všetky školy 17.5.2024, rodič potvrdzuje nástup na štúdium do 22.5.2024. 
+                        <br><br>
+                        <font color="red"><strong>Zápis žiakov do 4RG prijatých bez prijímacej skúšky</strong></font> (T9 90 a viac%) organizujeme 2.5.2024, 13,30- 16,30h., hlavný vchod, školská knižnica vo vstupe.
+                        <br><br>
+                        <font color="red"><strong>Zápis žiakov po prijímacích skúškach</strong></font>
+                        <br><br>
+                        pre 4RG organizujeme 17.5.2024 13,30 - 16,30 h., hlavný vchod, školská knižnica vo vstupe,
+                        <br><br>
+                        pre 8RG organizujeme 20.5.2024 13,30 - 16,30 h., hlavný vchod, školská knižnica vo vstupe.
+                        <br><br>
+                        Všetkým záujemcom pošleme písomnú pozvánku s pokynmi k prijímacím skúškam najneskôr 5 dní pred skúškou. Všetci žiaci musia absolvovať písomnú prijímaciu skúšku. Výnimkou sú žiaci prihlásení do 4RG a dosiahnu výsledok v testovaní T9 90 a viac % v oboch predmetoch. Títo žiaci budú prijatí bez písomnej prijímacej skúšky. Všetkým záujemcom o štúdium u nás držíme palce a tešíme sa na Vás!
+                        <br><br>
+                        Miroslav Kubičár.
+                        </p>
+                </div>
+
+                <div class="outer">
+                    <div class="inner">
+                        <h3>Koyšove Ladce</h3>
+                    </div>
+                    <p>20.10.2023 /piatok/ sa</p>
+                    <p style="text-align: center;"><font color="blue"><strong>Mária Šalamúnová /sekunda/
+                    <br><br>
+                    zúčastnila celoštátnej súťaže v umeleckom prednese Koyšove Ladce.</strong></font>
+                    <br><br>
+                    V II. kategórii, vo veľkej konkurencii žiakov stredných škôl, konzervatórií a osemročných gymn. si "vyrecitovala" <font color="red"><strong>2. miesto.</strong></font>
+                    <br><br>
+                    Srdečne gratulujeme a povzbudzujeme všetkých k rozmanitým súťažiam a aktivitám.
+                    <br><br>
+                    V prílohe fotografia našej skvelej recitátorky s JUDr. Margarétou Koyšovou, manželkou básnika Pavla Koyša.
+                    <br><br>
+                    D. Mucsková
+                    </p>
+                    <img src="images/posts/Koysove_Ladce_Maria_Salamunova.jpeg" width="550" height="733">
+                </div>
+
+                <div class="outer">
+                    <div class="inner">
+                        <h3>Deň duševného zdravia</h3>
+                    </div>
+                    <p class="content">Dňa 11.10. 2023 sa v podkroví uskutočnil
+                    <br><br>
+                    <strong>Deň duševného zdravia. Pozvané boli triedy Sexty, Tercia, 2.A.,</strong>
+                    <br><br>
+                    s ktorými sme počas dňa skupinovo pracovali. Zo začiatku sme sa zamerali na zdroje  v živote, ktoré by sme mohli prirovnať k barličkám, o ktoré sa v živote opierame. 
+                    <br><br>
+                    V druhej aktivite sme žiakov rozdelili do skupiniek. Každá skupinka dostala krátky príbeh o študentovi, ktorý prežíval náročnú životnú situáciu. Žiaci sa snažili vymyslieť, ako by pre daného študenta mohli byť nápomocní. Nešlo o to, aby prišli na správnu odpoveď, ale snažili sme sa v žiakoch prebudiť citlivosť, vnímavosť voči okoliu.
+                    <br><br>
+                    Po individuálnom vyhodnotení sme viedli diskusiu na dané témy. Žiaci boli oboznámení s linkou pomoci Ipečko a Káčko Trenčín.
+                    <br><br>
+                    M.Adamičková
+                    </p>
+                    <img src="images/posts/dusa1.jpg" width="300" height="400" style="width: 45%; height: 100%;
+                    float: left;">
+                    <img src="images/posts/dusa2.jpg" width="300" height="400" style="width: 45%; height: 100%;
+                    float: right;">
+                    <img src="images/posts/dusa3.jpg" width="300" height="400" style="width: 45%; height: 100%;
+                    float: left;">
+                    <img src="images/posts/dusa4.jpg" width="300" height="400" style="width: 45%; height: 100%;">
+                </div>
             </div>
         </main>
-    </div>
+        <script src="script.js"></script>
 </body>
 </html>

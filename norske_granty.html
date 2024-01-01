@@ -13,32 +13,14 @@
 
     <div class="header">
         <a href="index.html" id="logo" title="Gymnázium Púchov">
-            <img src="images/header-removebg-preview.png" alt="Logo Gymnázium Púchov" title="Gymnázium Púchov">
+            <img src="images\header-removebg-preview.png" alt="Logo Gymnázium Púchov" title="Gymnázium Púchov">
         </a>
         <h1 class="vertical_align_fix" id="logotext">
-            <a href="index.html" id="logo" title="Gymnázium Púchov">
-                Gymnázium Púchov</a>
+            <a href="index.html" id="logo" title="Gymnázium Púchov">Gymnázium Púchov</a>
         </h1>
-        <!--<div id="search"></div>
-        <form id="search" method="get" action="http://www.gympb.sk/vyhladavanie.html?page_id=149">
-            <div id="search_form_content">
-                <div class="form_fields">
-                    <div class="search_left">
-                    <input type="text" name="hladaj" value="">
-                    </div>
-                    <div class="search_right">
-                    <input type="submit" name="search_button" value="">
-                    </div>
-                </div>
-            </div>
-        </form>-->
-
-        <div class="box">
-                <input type="text" name="q" value="" placeholder="Hľadať">
-                <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
     </div>
 
+    <div class="menu">
         <div class="menu-bar">
             <ul>
                 <li><a href="index.html" title="">Domov</a></li>
@@ -92,59 +74,71 @@
                 <li><a href="fotogaleria.html" title="">Fotogaléria</a></li>
                 <li><a href="kontakty.html" title="">Kontakty</a></li>
             </ul>
+            <div class="box">
+                <form>
+                    <input type="text" id="searchInput" class="inputbox" placeholder="Hľadať"/>
+                    <button type="button" onclick="highlightText()" class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
         </div>
+    </div>
 
+    <div class="left">
+        <div class="left-blank"></div>
         <div class="left-main">
             <div class="menu-2">
                 <ul>
-                    <li><a href="" title="">Pre žiakov</a> </li>
-                    <li><a href="" title="">Pre rodičov</a> </li>
-                    <li><a href="" title="">Podujatia, akcie</a> </li>
-                    <li><a href="" title="">Školský časopis - Gympsy</a> </li>
-                    <li><a href="" title="">Virtuálna prehliadka</a> </li>
+                    <li><a href="pre_ziakov.html" title="">Pre žiakov</a> </li>
+                    <li><a href="pre_rodicov.html" title="">Pre rodičov</a> </li>
+                    <li><a href="podujatia_akcie.html" title="">Podujatia, akcie</a> </li>
+                    <li><a href="gympsy.html" title="">Školský časopis - Gympsy</a> </li>
+                    <li><a href="virtualna_prehliadka.html" title="">Virtuálna prehliadka</a> </li>
                 </ul>
             </div>
             <div class="plagat">
-                <a href="" title="Zelená škola"><img src="images/zelena-skola.png" alt="Zelená škola" width="220" height="440"></a>
-                <a href="" title="DofE"><img src="images/dofe.jpg" alt="DofE" width="220" height="70"></a>
-                <a href="" title="Náboj"><img src="images/naboj2.0.png" alt="Náboj" width="220" height="74"></a>
+                <a href="zelena_a_modra_skola.html" title="Zelená škola"><img src="images/zelena-skola.png" alt="Zelená škola" width="220" height="440"></a>
+                <a href="dofe.html" title="DofE"><img src="images/dofe.jpg" alt="DofE" width="220" height="70"></a>
+                <a href="naboj.html" title="Náboj"><img src="images/naboj2.0.png" alt="Náboj" width="220" height="74"></a>
             </div>
         </div>
-        
+    </div>
+    
+    <div class="right">
+        <div class="right-blank"></div>
         <div class="right-main">
             <div class="event-container">
                 <h4>Informácie:</h4>
                 <div class="event">
                     <div class="event-left">
-                      <div class="event-date">
+                    <div class="event-date">
                         <div class="date">1</div>
                         <div class="month">Dec</div>
-                      </div>
+                    </div>
                     </div>
             
                     <div class="event-right">
-                      <h3 class="event-title">75. výročie</h3>
+                    <h3 class="event-title">75. výročie</h3>
             
-                      <div class="event-description">
+                    <div class="event-description">
                         Pozývame Vás na vyvrcholenie osláv 75. výročia od založenia
-                      </div>
+                    </div>
                     </div>
                 </div>
             
                 <div class="event">
                     <div class="event-left">
-                      <div class="event-date">
+                    <div class="event-date">
                         <div class="date">8</div>
                         <div class="month">Dec</div>
-                      </div>
+                    </div>
                     </div>
             
                     <div class="event-right">
-                      <h3 class="event-title">Zimný candrbál</h3>
+                    <h3 class="event-title">Zimný candrbál</h3>
             
-                      <div class="event-description">
+                    <div class="event-description">
                         Vstupenky zakúpite v triede 3.B
-                      </div>
+                    </div>
                     </div>
                 </div>
                 <div>
@@ -162,18 +156,19 @@
             <div class="video">
                 <h4>Promo video:</h4>
                 <iframe width="190" height="109" src="https://www.youtube.com/embed/LM1Faa1WcIQ?si=W0nmKA4TgpNAKRMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="190" height="109" src="https://www.youtube.com/embed/LXSyLRljhdk?si=VwqcwrAsTkkIHyWR" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="190" height="109" src="https://www.youtube.com/embed/LXSyLRljhdk?si=VwqcwrAsTkkIHyWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <iframe width="190" height="109" src="https://www.youtube.com/embed/nDisebxXUN4?si=_QbPEV1womcyxbu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="gympsy">
                 <h4>Šk. časopis - Gympsy:</h4>
-                <span style="font-size: 11pt;"><a href="" title="Školský časopis - Gympsy">
-                    <strong>Gympsy 10-2023/24<br></strong></span>
+                <span style="font-size: 11pt;"><a href="https://www.puchovskenoviny.sk/wp-content/uploads/2023/10/PN_2023_20.pdf" title="Školský časopis - Gympsy">
+                    <strong>Gympsy 10-2023<br></strong></span>
                     <img src="images/gympsy.png" alt="Školský časopis - Gympsy" width="190" height="130">
                 </a>
-                <span style="font-size: 10pt;"><a href="" target="_self">Ostatné čísla</a></span>
+                <span style="font-size: 10pt;"><a href="gympsy.html" target="_self">Ostatné čísla</a></span>
             </div>
         </div>
+    </div>
 
         <main>
             <div class="main">
@@ -217,5 +212,6 @@
                 </div>
             </div>
         </main>
+        <script src="script.js"></script>
 </body>
 </html>

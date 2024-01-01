@@ -1,17 +1,17 @@
-function xGetElementsByClassName(clsName, parentEle, tagName) {
-	var elements = null;
-	var found = [];
-	var s = String.fromCharCode(92);
-	var re = new RegExp('(?:^|' + s + 's+)' + clsName + '(?:$|' + s + 's+)');
-	if (!parentEle) parentEle = document;
-	if (!tagName) tagName = '*';
-	elements = parentEle.getElementsByTagName(tagName);
-	if (elements) {
-		for (var i = 0; i < elements.length; ++i) {
-			if (elements[i].className.search(re) != -1) {
-				found[found.length] = elements[i];
-			}
-		}
-	}
-	return found;
+function highlightText() {
+  const searchInput = document.getElementById('searchInput');
+  const searchValue = searchInput.value.trim();
+  const contentElement = document.querySelector('.content');
+
+  if (searchValue !== '') {
+     const content = contentElement.textContent;
+     const regex = new RegExp(searchValue, 'gi');
+     const highlightedContent = content.replace(
+        regex,
+        (match) => `<span class="highlight">${match}</span>`
+     );
+     contentElement.innerHTML = highlightedContent;
+   } else {
+      contentElement.innerHTML = contentElement.textContent;
+   }
 }

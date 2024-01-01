@@ -16,29 +16,11 @@
             <img src="images/header-removebg-preview.png" alt="Logo Gymnázium Púchov" title="Gymnázium Púchov">
         </a>
         <h1 class="vertical_align_fix" id="logotext">
-            <a href="index.html" id="logo" title="Gymnázium Púchov">
-                Gymnázium Púchov</a>
+            <a href="index.html" id="logo" title="Gymnázium Púchov">Gymnázium Púchov</a>
         </h1>
-        <!--<div id="search"></div>
-        <form id="search" method="get" action="http://www.gympb.sk/vyhladavanie.html?page_id=149">
-            <div id="search_form_content">
-                <div class="form_fields">
-                    <div class="search_left">
-                    <input type="text" name="hladaj" value="">
-                    </div>
-                    <div class="search_right">
-                    <input type="submit" name="search_button" value="">
-                    </div>
-                </div>
-            </div>
-        </form>-->
-
-        <div class="box">
-                <input type="text" name="q" value="" placeholder="Hľadať">
-                <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
     </div>
 
+    <div class="menu">
         <div class="menu-bar">
             <ul>
                 <li><a href="index.html" title="">Domov</a></li>
@@ -92,59 +74,71 @@
                 <li><a href="fotogaleria.html" title="">Fotogaléria</a></li>
                 <li><a href="kontakty.html" title="">Kontakty</a></li>
             </ul>
+            <div class="box">
+                <form>
+                    <input type="text" id="searchInput" class="inputbox" placeholder="Hľadať"/>
+                    <button type="button" onclick="highlightText()" class="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
         </div>
+    </div>
 
+    <div class="left">
+        <div class="left-blank"></div>
         <div class="left-main">
             <div class="menu-2">
                 <ul>
-                    <li><a href="" title="">Pre žiakov</a> </li>
-                    <li><a href="" title="">Pre rodičov</a> </li>
-                    <li><a href="" title="">Podujatia, akcie</a> </li>
-                    <li><a href="" title="">Školský časopis - Gympsy</a> </li>
-                    <li><a href="" title="">Virtuálna prehliadka</a> </li>
+                    <li><a href="pre_ziakov.html" title="">Pre žiakov</a> </li>
+                    <li><a href="pre_rodicov.html" title="">Pre rodičov</a> </li>
+                    <li><a href="podujatia_akcie.html" title="">Podujatia, akcie</a> </li>
+                    <li><a href="gympsy.html" title="">Školský časopis - Gympsy</a> </li>
+                    <li><a href="virtualna_prehliadka.html" title="">Virtuálna prehliadka</a> </li>
                 </ul>
             </div>
             <div class="plagat">
-                <a href="" title="Zelená škola"><img src="images/zelena-skola.png" alt="Zelená škola" width="220" height="440"></a>
-                <a href="" title="DofE"><img src="images/dofe.jpg" alt="DofE" width="220" height="70"></a>
-                <a href="" title="Náboj"><img src="images/naboj2.0.png" alt="Náboj" width="220" height="74"></a>
+                <a href="zelena_a_modra_skola.html" title="Zelená škola"><img src="images/zelena-skola.png" alt="Zelená škola" width="220" height="440"></a>
+                <a href="dofe.html" title="DofE"><img src="images/dofe.jpg" alt="DofE" width="220" height="70"></a>
+                <a href="naboj.html" title="Náboj"><img src="images/naboj2.0.png" alt="Náboj" width="220" height="74"></a>
             </div>
         </div>
-
+    </div>
+    
+    <div class="right">
+        <div class="right-blank"></div>
         <div class="right-main">
             <div class="event-container">
                 <h4>Informácie:</h4>
                 <div class="event">
                     <div class="event-left">
-                      <div class="event-date">
+                    <div class="event-date">
                         <div class="date">1</div>
                         <div class="month">Dec</div>
-                      </div>
+                    </div>
                     </div>
             
                     <div class="event-right">
-                      <h3 class="event-title">75. výročie</h3>
+                    <h3 class="event-title">75. výročie</h3>
             
-                      <div class="event-description">
+                    <div class="event-description">
                         Pozývame Vás na vyvrcholenie osláv 75. výročia od založenia
-                      </div>
+                    </div>
                     </div>
                 </div>
             
                 <div class="event">
                     <div class="event-left">
-                      <div class="event-date">
+                    <div class="event-date">
                         <div class="date">8</div>
                         <div class="month">Dec</div>
-                      </div>
+                    </div>
                     </div>
             
                     <div class="event-right">
-                      <h3 class="event-title">Zimný candrbál</h3>
+                    <h3 class="event-title">Zimný candrbál</h3>
             
-                      <div class="event-description">
+                    <div class="event-description">
                         Vstupenky zakúpite v triede 3.B
-                      </div>
+                    </div>
                     </div>
                 </div>
                 <div>
@@ -162,57 +156,57 @@
             <div class="video">
                 <h4>Promo video:</h4>
                 <iframe width="190" height="109" src="https://www.youtube.com/embed/LM1Faa1WcIQ?si=W0nmKA4TgpNAKRMh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="190" height="109" src="https://www.youtube.com/embed/LXSyLRljhdk?si=VwqcwrAsTkkIHyWR" title="YouTube video player" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe width="190" height="109" src="https://www.youtube.com/embed/LXSyLRljhdk?si=VwqcwrAsTkkIHyWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <iframe width="190" height="109" src="https://www.youtube.com/embed/nDisebxXUN4?si=_QbPEV1womcyxbu8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="gympsy">
                 <h4>Šk. časopis - Gympsy:</h4>
-                <span style="font-size: 11pt;"><a href="" title="Školský časopis - Gympsy">
-                    <strong>Gympsy 10-2023/24<br></strong></span>
+                <span style="font-size: 11pt;"><a href="https://www.puchovskenoviny.sk/wp-content/uploads/2023/10/PN_2023_20.pdf" title="Školský časopis - Gympsy">
+                    <strong>Gympsy 10-2023<br></strong></span>
                     <img src="images/gympsy.png" alt="Školský časopis - Gympsy" width="190" height="130">
                 </a>
-                <span style="font-size: 10pt;"><a href="" target="_self">Ostatné čísla</a></span>
+                <span style="font-size: 10pt;"><a href="gympsy.html" target="_self">Ostatné čísla</a></span>
             </div>
         </div>
+    </div>
 
         <main>
             <div class="main">
-                <div class="content">
-                    <div class="outer">
-                        <div class="inner">
-                            <h3>História školy</h3>
-                        </div>
-                        <p><strong>Z histórie Gymnázia v Púchove</strong>
-                            <br><br>
-                            Bezprostredne po oslobodení a skončení 2. svetovej vojny rastú snahy občanov Púchova a okolitých obcí o zriadenie gymnázia v Púchove. Z ich podnetov prijal MNV v Púchove uznesenie č. 12/46 zo dňa 26.2.1946, ktorým požiadal Povereníctvo školstva o osvety v Bratislave o zriadenie gymnázia. Hoci k tejto žiadosti sa pripojili i obce okresu Púchov a Ilava, nebolo o nej rozhodnuté. Preto 11.3.1948 predložili zástupcovia obce a okresu novú žiadosť, v ktorej sa obec zaviazala prispieť na stavbu školskej budovy. Povereníctvo školstva už 22.3.1948 oznámilo, že zriadenie školy III. stupňa v Púchove je odôvodnené a už v roku 1948 aktuálne. Obec sa však musí postarať o umiestnenie školy.
-                            <br><br>
-                            S nebývalým elánom a aktivitou občanov a odborníkov mesta a okolia sa podľa návrhu Dr. Ing. Číhala začala dňa 11. apríla 1948 výstavba obecnej knižnice a čitárne ako dočasného sídla školy. V deň národnej smeny víťazstva sa na ruinách soľného skladu občania bez rozdielu stavu pustili do kopania základov. Úspešne prekonali administratívne i materiálne prekážky a za neuveriteľných 110 dní postavili budovu v hodnote 5 397 911,60 korún. Boli v nej 4 učebne, 2 kabinety, riaditeľňa a zborovňa, hygienické zariadenia a na poschodí 2 byty. Výnosom Povereníctva školstva, vedy a umenia číslo 141580/48-III. zo dňa 21. augusta 1948 vzniklo Gymnázium v Púchove.
-                            <br><br>
-                            Vyučovanie začalo 3. septembra, ale slávnostné otvorenie a posviacka bola za prítomnosti hostí, žiakov a rodičov 12.9. 1948. Pod vedením riaditeľa Dr. Jozefa Baráta sa začala výuka v dvoch triedach: I. trieda/ podľa gymnaziálneho systému piata/mala 32 žiakov, z toho 16 dievčat a jej triednym profesorom bol Karol Pichner. II./ alebo šiesta/ mala 18 žiakov, z toho 7 dievčat a jej triedny profesor bol Štefan Dian. Ďalšími členmi pedagogického zboru boli: Elena Konfalová, Alexander Štibráni, Roman Veverčák, Andrej Mirvaj a ako vyučujúci náboženstva Teodor Ferenczy a Peter Škodáček. Už v nasledovnom školskom roku mala škola v troch triedach a jednej pobočke 138 žiakov z Púchova, Považskej Bystrice, Dubnice, Ladiec, Po preložení Dr. Baráta sa riaditeľkou stala Hermína Raučinová (neskôr Jesenská). Škola za pomoci mestských a okresných orgánov získavala materiálne vybavenie, základy knižnice a stávala sa neoddeliteľnou súčasťou hospodárskeho, sociálneho a kultúrneho života mesta.
-                            <br><br>
-                            V šk. roku 1953/54 v rámci reorganizácie školského systému bolo gymnázium skrátené na tri roky a zaradené ako tretí stupeň vzdelávania pod názvom jedenásťročná stredná škola (JSŠ). Za riaditeľku bola vymenovaná Dr. Květoslava Bártová (7 rokov) od šk. roku 1960/61 Vladimír Ruman (5 rokov). V decembri 1959 dostala JSŠ novú budovu pod Lachovcom spolu so základnou školou. Nový školský zákon z roku 1960 zrušil JSŠ a vytvoril strednú všeobecno – vzdelávaciu školu (SVŠ) s účinnosťou od 1.9.1961.
-                            <br><br>
-                            V šk. roku 1965/66 došlo k organizačno – administratívnemu odčleneniu SVŠ od ZŠ na Komenského ulici. SVŠ bola umiestnená v dvoch budovách: budova A na Ulici 1. mája a budova B na Poštovej ulici. Novým riaditeľom bol menovaný Jozef Martinka. Škola mala sedem tried s 215 žiakmi, deväť interných a šesť externých učiteľov. Zásluhou riaditeľa sa výrazne zlepšili materiálne podmienky školy a vybavenosť s pomôckami a didaktickou technikou. Postupne rástol počet žiakov, učiteľov, ale i úspechy školy.
-                            <br><br>
-                            Od 1.9.1969 v rámci ďalších organizačných zmien bolo v Púchove opäť zriadené gymnázium. Jeho hlavnou úlohou bolo pripraviť žiakov pre vysokoškolské štúdium, ale i do spoločenskej praxe. Od šk. roku 1977/78 bol za riaditeľa vymenovaný RNDr. Jozef Kukučka. Zaslúžil sa o modernizáciu oboch budov školy (zavedené ústredné kúrenie, modernizácia elektrického vedenia, vodovodu ... ). V rokoch 1979-81 sa uskutočnila prístavba v budove A, ktorou škola získala dve klasické učebne, dve laboratóriá, kabinety. V rokoch 1985-89 bola postavená veľmi potrebná telocvičňa – slávnostne otvorená 10. marca 1989. Zároveň začala tretia etapa prístavby v plánovanom náklade 5 miliónov Kčs. V tom čase mala škola 12 tried, 342 žiakov, 25 interných a 2 externých vyučujúcich. Prístavbou dokončenou v roku 1990 získala škola 6 klasických učební, priestory pre riaditeľa, zástupcu, hospodárku, kabinety a šatne. Od šk. roku 1991/92 sme mohli uvoľniť budovu B pre osobitnú školu. Dnes budovu využíva základná umelecká škola. Zároveň sme spätne získali pôvodnú budovu gymnázia, ktorá dlhšie obdobie slúžila ako materská škôlka.Dnes škola využíva budovy A(1990),B(1981),C(1926-meštianska škola),D(1989-telocvičňa),E(1948-škôlka-pôvodná budova gymnázia), multifunkčné ihrisko z prostriedkov TSK(2019), workoutové ihrisko(2019).
-                            <br><br>
-                            Po novembrovej revolúcii dochádza k výrazným zmenám i v našej škole. Výchova v duchu marx - leninizmu bola nahradená výchovou v duchu humanizmu, demokracie a vlastenectva. V rámci demokratizácie bola podľa smerníc MŠ zriadená zo zástupcov pedagógov, študentov, rodičov a mestských orgánov Rada školy pri Gymnáziu v Púchove. V januári 1990 zvolila za riaditeľa RNDr. Kukučku a za zástupcu PaedDr. Ľuboša Jurgu. Od 1.9.1991 bol zvolený za riaditeľa PaedDr. Jurga, ktorý však od 1. 11. požiadal o polročné neplatené voľno a neskôr odišiel do podnikateľskej sféry. Zastupujúcim a neskôr riadnym riaditeľom sa opäť stal RNDr. Kukučka. Za zástupkyňu pre výchovu a vzdelávanie vymenoval Mgr. Danku Školkovú – od 1.11.1991. Od 1.12.1995 vymenoval druhého zástupcu pre ekonomicko-technické činnosti – Jána Slavíka.
-                            <br><br>
-                            Na základe konkurzu sa 1.8.1999 stal riaditeľom školy Mgr. Peter Horváth, ktorý vymenoval za zástupcu pre technicko- ekonomické veci od 1.8.2000 Mgr. Karola Drobného. Po päťročnom funkčnom období pána Horvátha sa stáva riaditeľkou školy 1.8.2004 PaedDr. Mária Šnídlová a od 1. 9. 2005 zástupkyňou pre technicko- ekonomické veci Ing. Mária Jakubeková.
-                            <br><br>
-                            Po odchode pani Šnídlovej za metodičku Metodicko- pedagogického centra v Banskej Bystrici sa stal 1.9.2006 riaditeľom školy PaedDr. Miroslav Kubičár, ktorý predtým pôsobil 15 rokov ako riaditeľ miestnej odevnej školy. Zástupcami riaditeľa sú: Mgr. Danka Školková a od 1.9.2009 Mgr. Mária Pastorková, pre výchovu a vzdelávanie a Ing. Mária Jakubeková, pre technicko-ekonomické činnosti. Od 1.9.2011 a 2016 bol M. Kubičár po úspešnom konkurze opäť menovaný riaditeľom školy na ďalších päť rokov.Od 1.9.2014 má škola len jednu zástupkyňu pre teoretické vyučovanie M.Pastorkovú.
-                            <br><br>
-                            V rámci snáh o demokratizáciu a pluralitu školstva sme so súhlasom MŠ SR otvorili jednu triedu osemročného gymnaziálneho štúdia ročne. Trieda bola zameraná na programovanie a na informatiku. Hoci každoročne sa do nej hlásilo aj 150 žiakov, prijímali sme vždy do 30 najlepších žiakov.
-                            <br><br>
-                            Dnes má škola plánovanú kapacitu 20 tried (12 tried štvorročného štúdia a 8 tried osemročného štúdia), do 600 žiakov, viac ako 40 učiteľov, 10 nepedagogických zamestnancov. Skutočný počet žiakov však vzhľadom na prudký pokles populačnej krivky každý rok klesá.Priemerný počet žiakov v triedach sa približuje k číslu 25. Počet tried a žiakov postupne výraznými redukciami štátu a kraja klesol na 16 tried a 410 žiakov.
-                            <br><br>
-                            Pohľad do histórie našej školy by nebol úplný, keby sme nespomenuli družbu s Gymnáziom vo Valašských Kloboukoch (súčasťou školy je dnes i obchodná akadémia). Prvá zmienka je z obdobia tesne po vzniku oboch škôl z roku 1951. Žijúci pamätníci svorne tvrdia, že vzájemné kontakty boli v prvých desaťročiach veľmi čulé. Vzájomné stretnutia žiakov a učiteľov, společné lyžiarske kurzy a dokonca výmeny učiteľov na vyučovaní. Táto spolupráca pretrváva i po rozpade spoločného štátu Čechov a Slovákov. Každoročné stretnutia žiakov, učiteľov a rodičov oboch škôl patria i dnes k vzácnym chvíľam radosti, čerpania nových poznatkov, skúseností, ale aj nových priateľstiev. Po viacerých rokoch sme dokonca obnovili výmenu učiteľov slovenského a českého jazyka v trvaní dvoch dní.
-                            <br><br>
-                            Škola prechádza postupnou modernizáciou. Rekonštrukcia WC v budove C v roku 2007. Komplexná rekonštrukcia budov A,B,C a D sa ukončila v roku 2013. Výmena okien a strechy budovy E v roku 2018, výmena spojovacieho prístrešku medzi budovami  A a E v roku 2018. V roku 2018 rekonštrukcia spŕch a šatní telocvične. V roku 2019 vybudovanie multifunkčného ihriska na pôvodnej asfaltovej ploche na nádvorí a vznik workoutového ihriska. V roku 2020 vybudovanie školskej hvezdárne a učebne astronómie na budove E. V roku 2020 výmena podlách na chodbách a schodiskách budovy B, obnova terrasovej podlahy na chodbách a obnova žulových schodísk v budove B.
-                        </p>
+                <div class="outer">
+                    <div class="inner">
+                        <h3>História školy</h3>
                     </div>
+                    <p class="content"><strong>Z histórie Gymnázia v Púchove</strong>
+                        <br><br>
+                        Bezprostredne po oslobodení a skončení 2. svetovej vojny rastú snahy občanov Púchova a okolitých obcí o zriadenie gymnázia v Púchove. Z ich podnetov prijal MNV v Púchove uznesenie č. 12/46 zo dňa 26.2.1946, ktorým požiadal Povereníctvo školstva o osvety v Bratislave o zriadenie gymnázia. Hoci k tejto žiadosti sa pripojili i obce okresu Púchov a Ilava, nebolo o nej rozhodnuté. Preto 11.3.1948 predložili zástupcovia obce a okresu novú žiadosť, v ktorej sa obec zaviazala prispieť na stavbu školskej budovy. Povereníctvo školstva už 22.3.1948 oznámilo, že zriadenie školy III. stupňa v Púchove je odôvodnené a už v roku 1948 aktuálne. Obec sa však musí postarať o umiestnenie školy.
+                        <br><br>
+                        S nebývalým elánom a aktivitou občanov a odborníkov mesta a okolia sa podľa návrhu Dr. Ing. Číhala začala dňa 11. apríla 1948 výstavba obecnej knižnice a čitárne ako dočasného sídla školy. V deň národnej smeny víťazstva sa na ruinách soľného skladu občania bez rozdielu stavu pustili do kopania základov. Úspešne prekonali administratívne i materiálne prekážky a za neuveriteľných 110 dní postavili budovu v hodnote 5 397 911,60 korún. Boli v nej 4 učebne, 2 kabinety, riaditeľňa a zborovňa, hygienické zariadenia a na poschodí 2 byty. Výnosom Povereníctva školstva, vedy a umenia číslo 141580/48-III. zo dňa 21. augusta 1948 vzniklo Gymnázium v Púchove.
+                        <br><br>
+                        Vyučovanie začalo 3. septembra, ale slávnostné otvorenie a posviacka bola za prítomnosti hostí, žiakov a rodičov 12.9. 1948. Pod vedením riaditeľa Dr. Jozefa Baráta sa začala výuka v dvoch triedach: I. trieda/ podľa gymnaziálneho systému piata/mala 32 žiakov, z toho 16 dievčat a jej triednym profesorom bol Karol Pichner. II./ alebo šiesta/ mala 18 žiakov, z toho 7 dievčat a jej triedny profesor bol Štefan Dian. Ďalšími členmi pedagogického zboru boli: Elena Konfalová, Alexander Štibráni, Roman Veverčák, Andrej Mirvaj a ako vyučujúci náboženstva Teodor Ferenczy a Peter Škodáček. Už v nasledovnom školskom roku mala škola v troch triedach a jednej pobočke 138 žiakov z Púchova, Považskej Bystrice, Dubnice, Ladiec, Po preložení Dr. Baráta sa riaditeľkou stala Hermína Raučinová (neskôr Jesenská). Škola za pomoci mestských a okresných orgánov získavala materiálne vybavenie, základy knižnice a stávala sa neoddeliteľnou súčasťou hospodárskeho, sociálneho a kultúrneho života mesta.
+                        <br><br>
+                        V šk. roku 1953/54 v rámci reorganizácie školského systému bolo gymnázium skrátené na tri roky a zaradené ako tretí stupeň vzdelávania pod názvom jedenásťročná stredná škola (JSŠ). Za riaditeľku bola vymenovaná Dr. Květoslava Bártová (7 rokov) od šk. roku 1960/61 Vladimír Ruman (5 rokov). V decembri 1959 dostala JSŠ novú budovu pod Lachovcom spolu so základnou školou. Nový školský zákon z roku 1960 zrušil JSŠ a vytvoril strednú všeobecno – vzdelávaciu školu (SVŠ) s účinnosťou od 1.9.1961.
+                        <br><br>
+                        V šk. roku 1965/66 došlo k organizačno – administratívnemu odčleneniu SVŠ od ZŠ na Komenského ulici. SVŠ bola umiestnená v dvoch budovách: budova A na Ulici 1. mája a budova B na Poštovej ulici. Novým riaditeľom bol menovaný Jozef Martinka. Škola mala sedem tried s 215 žiakmi, deväť interných a šesť externých učiteľov. Zásluhou riaditeľa sa výrazne zlepšili materiálne podmienky školy a vybavenosť s pomôckami a didaktickou technikou. Postupne rástol počet žiakov, učiteľov, ale i úspechy školy.
+                        <br><br>
+                        Od 1.9.1969 v rámci ďalších organizačných zmien bolo v Púchove opäť zriadené gymnázium. Jeho hlavnou úlohou bolo pripraviť žiakov pre vysokoškolské štúdium, ale i do spoločenskej praxe. Od šk. roku 1977/78 bol za riaditeľa vymenovaný RNDr. Jozef Kukučka. Zaslúžil sa o modernizáciu oboch budov školy (zavedené ústredné kúrenie, modernizácia elektrického vedenia, vodovodu ... ). V rokoch 1979-81 sa uskutočnila prístavba v budove A, ktorou škola získala dve klasické učebne, dve laboratóriá, kabinety. V rokoch 1985-89 bola postavená veľmi potrebná telocvičňa – slávnostne otvorená 10. marca 1989. Zároveň začala tretia etapa prístavby v plánovanom náklade 5 miliónov Kčs. V tom čase mala škola 12 tried, 342 žiakov, 25 interných a 2 externých vyučujúcich. Prístavbou dokončenou v roku 1990 získala škola 6 klasických učební, priestory pre riaditeľa, zástupcu, hospodárku, kabinety a šatne. Od šk. roku 1991/92 sme mohli uvoľniť budovu B pre osobitnú školu. Dnes budovu využíva základná umelecká škola. Zároveň sme spätne získali pôvodnú budovu gymnázia, ktorá dlhšie obdobie slúžila ako materská škôlka.Dnes škola využíva budovy A(1990),B(1981),C(1926-meštianska škola),D(1989-telocvičňa),E(1948-škôlka-pôvodná budova gymnázia), multifunkčné ihrisko z prostriedkov TSK(2019), workoutové ihrisko(2019).
+                        <br><br>
+                        Po novembrovej revolúcii dochádza k výrazným zmenám i v našej škole. Výchova v duchu marx - leninizmu bola nahradená výchovou v duchu humanizmu, demokracie a vlastenectva. V rámci demokratizácie bola podľa smerníc MŠ zriadená zo zástupcov pedagógov, študentov, rodičov a mestských orgánov Rada školy pri Gymnáziu v Púchove. V januári 1990 zvolila za riaditeľa RNDr. Kukučku a za zástupcu PaedDr. Ľuboša Jurgu. Od 1.9.1991 bol zvolený za riaditeľa PaedDr. Jurga, ktorý však od 1. 11. požiadal o polročné neplatené voľno a neskôr odišiel do podnikateľskej sféry. Zastupujúcim a neskôr riadnym riaditeľom sa opäť stal RNDr. Kukučka. Za zástupkyňu pre výchovu a vzdelávanie vymenoval Mgr. Danku Školkovú – od 1.11.1991. Od 1.12.1995 vymenoval druhého zástupcu pre ekonomicko-technické činnosti – Jána Slavíka.
+                        <br><br>
+                        Na základe konkurzu sa 1.8.1999 stal riaditeľom školy Mgr. Peter Horváth, ktorý vymenoval za zástupcu pre technicko- ekonomické veci od 1.8.2000 Mgr. Karola Drobného. Po päťročnom funkčnom období pána Horvátha sa stáva riaditeľkou školy 1.8.2004 PaedDr. Mária Šnídlová a od 1. 9. 2005 zástupkyňou pre technicko- ekonomické veci Ing. Mária Jakubeková.
+                        <br><br>
+                        Po odchode pani Šnídlovej za metodičku Metodicko- pedagogického centra v Banskej Bystrici sa stal 1.9.2006 riaditeľom školy PaedDr. Miroslav Kubičár, ktorý predtým pôsobil 15 rokov ako riaditeľ miestnej odevnej školy. Zástupcami riaditeľa sú: Mgr. Danka Školková a od 1.9.2009 Mgr. Mária Pastorková, pre výchovu a vzdelávanie a Ing. Mária Jakubeková, pre technicko-ekonomické činnosti. Od 1.9.2011 a 2016 bol M. Kubičár po úspešnom konkurze opäť menovaný riaditeľom školy na ďalších päť rokov.Od 1.9.2014 má škola len jednu zástupkyňu pre teoretické vyučovanie M.Pastorkovú.
+                        <br><br>
+                        V rámci snáh o demokratizáciu a pluralitu školstva sme so súhlasom MŠ SR otvorili jednu triedu osemročného gymnaziálneho štúdia ročne. Trieda bola zameraná na programovanie a na informatiku. Hoci každoročne sa do nej hlásilo aj 150 žiakov, prijímali sme vždy do 30 najlepších žiakov.
+                        <br><br>
+                        Dnes má škola plánovanú kapacitu 20 tried (12 tried štvorročného štúdia a 8 tried osemročného štúdia), do 600 žiakov, viac ako 40 učiteľov, 10 nepedagogických zamestnancov. Skutočný počet žiakov však vzhľadom na prudký pokles populačnej krivky každý rok klesá.Priemerný počet žiakov v triedach sa približuje k číslu 25. Počet tried a žiakov postupne výraznými redukciami štátu a kraja klesol na 16 tried a 410 žiakov.
+                        <br><br>
+                        Pohľad do histórie našej školy by nebol úplný, keby sme nespomenuli družbu s Gymnáziom vo Valašských Kloboukoch (súčasťou školy je dnes i obchodná akadémia). Prvá zmienka je z obdobia tesne po vzniku oboch škôl z roku 1951. Žijúci pamätníci svorne tvrdia, že vzájemné kontakty boli v prvých desaťročiach veľmi čulé. Vzájomné stretnutia žiakov a učiteľov, společné lyžiarske kurzy a dokonca výmeny učiteľov na vyučovaní. Táto spolupráca pretrváva i po rozpade spoločného štátu Čechov a Slovákov. Každoročné stretnutia žiakov, učiteľov a rodičov oboch škôl patria i dnes k vzácnym chvíľam radosti, čerpania nových poznatkov, skúseností, ale aj nových priateľstiev. Po viacerých rokoch sme dokonca obnovili výmenu učiteľov slovenského a českého jazyka v trvaní dvoch dní.
+                        <br><br>
+                        Škola prechádza postupnou modernizáciou. Rekonštrukcia WC v budove C v roku 2007. Komplexná rekonštrukcia budov A,B,C a D sa ukončila v roku 2013. Výmena okien a strechy budovy E v roku 2018, výmena spojovacieho prístrešku medzi budovami  A a E v roku 2018. V roku 2018 rekonštrukcia spŕch a šatní telocvične. V roku 2019 vybudovanie multifunkčného ihriska na pôvodnej asfaltovej ploche na nádvorí a vznik workoutového ihriska. V roku 2020 vybudovanie školskej hvezdárne a učebne astronómie na budove E. V roku 2020 výmena podlách na chodbách a schodiskách budovy B, obnova terrasovej podlahy na chodbách a obnova žulových schodísk v budove B.
+                    </p>
                 </div>
             </div>
         </main>
+        <script src="script.js"></script>
 </body>
 </html>
